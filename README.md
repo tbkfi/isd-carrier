@@ -3,7 +3,6 @@
 This repository contains a schematic and pcb design for an international sensor development project between Metropolia UAS and Osnabrück Hochschule.
 
 ![ISD Carrier Prototype PCB Render](/output/v0.1/render.png)
-![ISD Carrier Prototype PCB Routing](/output/v0.1/isd-board-dual-socket.png)
 
 ## Features
 
@@ -31,6 +30,7 @@ The main system power is boosted from the available inputs to 5V, and fed into t
 See the repository directory labeled 'output' for the board revision files. The directory contains schematic (pdf), routing (png), and an interactive bill of materials (bom).
 
 ![ISD Carrier Prototype PCB Schematic](/output/v0.1/isd-board-dual-socket.pdf)
+![ISD Carrier Prototype PCB Routing](/output/v0.1/isd-board-dual-socket.png)
 
 
 
