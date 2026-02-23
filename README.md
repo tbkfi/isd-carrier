@@ -2,6 +2,7 @@
 
 This repository contains a schematic and pcb design for an international sensor development project between Metropolia UAS and Osnabrück Hochschule.
 
+![ISD Carrier Prototype PCB Render](/output/v0.1/render.png)
 ![ISD Carrier Prototype PCB Routing](/output/v0.1/isd-board-dual-socket.png)
 
 ## Features
