@@ -6,7 +6,9 @@ This repository contains a schematic and pcb design for an international sensor 
 
 ## Features
 
-The main system power is boosted from the available inputs to 5V, and fed into the MCU module and 5V peripherals. The MCU modules have LDOs that are taken advantage for the 3V3 peripheral power.
+![Physical ISD Carrier Prototype PCB](/prototype.png)
+
+The main system power is boosted from the available inputs to 5V, and fed into the MCU module and 5V peripherals. The MCU modules have LDOs that are taken advantage of for the 3V3 peripheral power.
 - Sockets for: BlackIoT Polverine, DFR1117
 - Unified PWR switch on-pcb
 - LiPo protection circuit
@@ -16,6 +18,7 @@ The main system power is boosted from the available inputs to 5V, and fed into t
 	- JST(2.0mm): LiPo battery
 	- JST(2.0mm): Photovoltaic panel (8-28V)
 	- Header(2.54mm): E.g. Bench-top power supply
+    - PCB USB-C (charging, 5V peripherals, main power)
 	- MCU module USB-C (no 5V peripherals, no charging!)
 - Sensor support (same for Polverine & DFR1117):
 	- BME690 via I2C (LGA, integrated)
@@ -32,5 +35,15 @@ See the repository directory labeled 'output' for the board revision files. The 
 ![ISD Carrier Prototype PCB Schematic](/output/v0.1/isd-board-dual-socket.pdf)
 ![ISD Carrier Prototype PCB Routing](/output/v0.1/isd-board-dual-socket.png)
 
+### Issues
+
+The following headings contain discovered issues for revisions, both in schematic and
+practical problems when building the board(s).
+
+### version 0.1
+- ZIF-connector is physically oriented 180deg from the intended direction. No effect on
+sensor function or electrical.
+- The ordered FET was not the SKU in BOM, and had a different physical pinout and package type.
+Requires jump wires to fix, but otherwise no impact as electrical characteristics are identical.
 
 
