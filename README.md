@@ -41,9 +41,7 @@ The following headings contain discovered issues for revisions, both in schemati
 practical problems when building the board(s).
 
 ### version 0.1
-- ZIF-connector is physically oriented 180deg from the intended direction. No effect on
-sensor function or electrical.
-- The ordered FET was not the SKU in BOM, and had a different physical pinout and package type.
-Requires jump wires to fix, but otherwise no impact as electrical characteristics are identical.
-
+- ZIF-connector: Insertion direction is reversed, making it unusable. Neccessitates the use of Polverine for BMV080.
+- Power Path: Ordered FET(P) was not the one in BOM, and had differing package. Soldering was still possible at 45deg angle, and bending unneeded pins above the package.
+- DW01A: Behaviour is erratic, despite following datasheet application diagram. Can be worked around by powering load from external input, and only connecting the battery afterwards.
 
