@@ -45,14 +45,14 @@ This section contains issues encountered up to and during the final integration 
 this board with all the external peripherals. Some issues are PCB related, others are practical inefficiencies or overlooked details.
 
 ### version 0.1
-    1. ZIF-connector: Insertion direction is reversed. Causing the pin-direction to be flipped, making the connector unusable. Neccessitates the use of Polverine for BMV080 functionality.
-    2. Power Path: P-FET which was ordered had differing package type from original. Soldering was still possible at 45deg angle, and bending unneeded pins above the package to avoid shorts.
-    3. DW01A: Behaviour was unexpected during testing despite following datasheet application diagram in design. Couple workarounds were found, but ultimately the IC should be replaced in the design
-    with something more robust from TI or Microchip (E.g.) to increase reliability and control over the protection circuit.
-    4. Peripheral cabling: Operation was susceptible to jumpers, badly crimped or soldered cables, which caused unnecessary debugging and inconsistent results.
-    5. Prototype PCB count: Not enough prototypes were made to provide such large teams with an efficient number of PCBs while continuing to validate power management behaviour.
-    As LoRa and Sensor teams received one prototype, and found them to be in working condition, it became virtually impossible to get either of them back for more power-related validation. 
-    6. It's a good idea to validate the MCU modules and cabling that is in use by other teams, specially if they were made or modified by them, as on more than one ocassion incorrectly (or not at all)
-    soldered pin headers caused certain functionality to not work, as nothing was plugged in...
-    7. I2C Pull-ups: Existing 10k pulls caused issues with DFR1117, while the configuration worked with Polverine. The pull-ups on PCB were removed to fix the issue. Though it's possible
-    this issue was due to bad cabling or bad sensor, as the pull-ups shouldn't technically cause this kind of issue in this configuration.
+1. ZIF-connector: Insertion direction is reversed. Causing the pin-direction to be flipped, making the connector unusable. Neccessitates the use of Polverine for BMV080 functionality.
+2. Power Path: P-FET which was ordered had differing package type from original. Soldering was still possible at 45deg angle, and bending unneeded pins above the package to avoid shorts.
+3. DW01A: Behaviour was unexpected during testing despite following datasheet application diagram in design. Couple workarounds were found, but ultimately the IC should be replaced in the design
+with something more robust from TI or Microchip (E.g.) to increase reliability and control over the protection circuit.
+4. Peripheral cabling: Operation was susceptible to jumpers, badly crimped or soldered cables, which caused unnecessary debugging and inconsistent results.
+5. Prototype PCB count: Not enough prototypes were made to provide such large teams with an efficient number of PCBs while continuing to validate power management behaviour.
+As LoRa and Sensor teams received one prototype, and found them to be in working condition, it became virtually impossible to get either of them back for more power-related validation. 
+6. It's a good idea to validate the MCU modules and cabling that is in use by other teams, specially if they were made or modified by them, as on more than one ocassion incorrectly (or not at all)
+soldered pin headers caused certain functionality to not work, as nothing was plugged in...
+7. I2C Pull-ups: Existing 10k pulls caused issues with DFR1117, while the configuration worked with Polverine. The pull-ups on PCB were removed to fix the issue. Though it's possible
+this issue was due to bad cabling or bad sensor, as the pull-ups shouldn't technically cause this kind of issue in this configuration.
